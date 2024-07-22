@@ -1,0 +1,39 @@
+:root{
+    --main-color:gray;
+    --black-color :black;
+    --transition: all .3s ease-in-out;
+
+}
+ body {
+    height: 100%;
+}
+.full-height {
+    height: 100vh;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    height: 100%;
+}
+
+.navbar{
+    padding: 20px 0;
+    border-bottom: 1px solid gray;
+}
+.navbar a{
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 1rem;
+    font-weight: bold ;
+    margin: 5px;
+    transition: var(--transition);
+}
+.navbar a:hover{
+    color: aliceblue;
+    transform: scale(1.1);
+}
+.buttons .btn{
+    margin: 5px;
+}
