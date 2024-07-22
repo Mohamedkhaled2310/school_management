@@ -1,8 +1,20 @@
 :root{
-    --main-color:gray;
+    --main-color: red;
+    --crimson-color :#8b0000 ;
     --black-color :black;
+    --secondry-color :#F5F5DC;
+    --brown-color :#544948;
     --transition: all .3s ease-in-out;
 
+}
+.bg-dark-red{
+    background-color: var(--crimson-color);
+}
+*{
+    font-family: "Rubik", sans-serif;
+}
+.bg-brown{
+    background-color: var(--brown-color);
 }
  body {
     height: 100%;
@@ -20,20 +32,67 @@
 
 .navbar{
     padding: 20px 0;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--secondry-color);
 }
 .navbar a{
     text-decoration: none;
-    color: var(--main-color);
+    color: var(--secondry-color);
     font-size: 1rem;
     font-weight: bold ;
     margin: 5px;
     transition: var(--transition);
+    padding-bottom: 5px; 
+    position: relative; 
 }
-.navbar a:hover{
-    color: aliceblue;
-    transform: scale(1.1);
+
+.navbar a::after {
+    content: '';                
+    position: absolute; 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; 
+    background: var(--secondry-color);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: var(--transition); 
 }
+
+.navbar a:hover::after {
+    transform: scaleX(1);  
+    transform-origin: bottom left; 
+}
+.logo {
+    height: 60px; 
+    width: auto;
+}
+
 .buttons .btn{
     margin: 5px;
+ 
+}
+
+.card{
+    transition: var(--transition);
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.jump-link {
+    text-decoration: none;
+    font-size: 19px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.arrow {
+    display: inline-block;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+    font-weight: bold;
+}
+
+
+.jump-link:hover .arrow {
+    transform: translateX(10px);
 }
