@@ -8,6 +8,7 @@
     --brown-color :#544948;
     --brown-dark-color :#2f2424;
     --transition: all .3s ease-in-out;
+    --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
 
 }
 .bg-dark-red{
@@ -40,7 +41,27 @@
 .navbar{
     padding: 20px 0;
     border-bottom: 1px solid var(--secondry-color);
+
 }
+
+
+.navbar-nav .nav-link:hover {
+    color: white !important; 
+}
+
+.navbar-toggler{
+    color: var(--secondry-color);
+    border-color: var(--secondry-color);
+    
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+   
+}
+
+
+
+
 .navbar a{
     text-decoration: none;
     color: var(--secondry-color);
@@ -81,7 +102,7 @@
 
 .card{
     transition: var(--transition);
-    padding-bottom: 20px ;
+  
    
 }
 .card:hover{
@@ -110,11 +131,12 @@
     
     background-color: antiquewhite; 
     text-align: center;
-    height: 350px;
+ 
     border: 2px solid var(--secondry-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: var(--crimson-color); 
     overflow: hidden;
+   
     
 }
 .card-fac p a{
