@@ -1,14 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
 :root{
     --main-color: red;
     --crimson-color :#8b0000 ;
     --black-color :black;
     --secondry-color :#F5F5DC;
     --brown-color :#544948;
+    --brown-dark-color :#2f2424;
     --transition: all .3s ease-in-out;
 
 }
 .bg-dark-red{
     background-color: var(--crimson-color);
+}
+.bg-dark-brown{
+    background-color: var(--brown-dark-color);
 }
 *{
     font-family: "Rubik", sans-serif;
@@ -25,6 +31,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: "Source Sans 3", sans-serif;
 }
 .container{
     height: 100%;
@@ -74,6 +81,8 @@
 
 .card{
     transition: var(--transition);
+    padding-bottom: 20px ;
+   
 }
 .card:hover{
     transform: scale(1.1);
@@ -95,4 +104,20 @@
 
 .jump-link:hover .arrow {
     transform: translateX(10px);
+}
+
+.card-fac {
+    
+    background-color: antiquewhite; 
+    text-align: center;
+    height: 350px;
+    border: 2px solid var(--secondry-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: var(--crimson-color); 
+    overflow: hidden;
+    
+}
+.card-fac p a{
+    color: black;
+    font-size: large;
 }
